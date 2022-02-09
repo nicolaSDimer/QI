@@ -1,3 +1,17 @@
+fun Media(n1: Float, n2: Float)
+{
+    var result : Float = (n1 + n2)/2
+
+    if(result >= 9)
+        println("A")
+    else if(result >= 7.5)
+        println("A")
+    else if(result >= 6)
+        println("A")
+    else
+        println("D")
+}
+
 fun main(args: Array<String>) {
 
     val pr_totais : Float = 50F
@@ -11,16 +25,7 @@ fun main(args: Array<String>) {
 
     if(faltas_por >= 75)
     {
-        var result : Float = (n1 + n2)/2
-
-        if(result >= 9)
-            println("A")
-        else if(result >= 7.5)
-            println("A")
-        else if(result >= 6)
-            println("A")
-        else
-            println("D")
+        Media(n1, n2)
     }
     else
     {
